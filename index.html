@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agarwal Hardware And Pipes | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-gap: 5px;
+            /* grid-template-rows:1fr 10fr 10fr 1fr;
+            grid-auto-rows:2fr; */
+            grid-template-areas:
+            'nav nav nav nav' 
+            'head head head head'
+            'service service service service'
+            'section section section section'
+            'footer footer footer footer'
+        }
+        #service{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            grid-area: service;
+        }
+        .nav{
+            grid-area: nav;
+             display: flex;
+            /*grid-template-columns: repeat(4,120px); */
+            height: 50px;
+            background-color: black;
+            position: sticky;
+        }
+        
+        .nav a{
+            /* padding-top: 40px;*/
+            padding-left: 30px;
+            /* padding-right: 10px; */
+            /* padding: 20px; */
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .head{
+            height: 450px;
+            grid-area: head;
+            /* color: white; */
+            position: relative;
+            /* display: block; */
+            margin:auto;
+            margin-top: 10px;
+        }
+
+        .head::after{
+            margin-top: 15px;
+            width: 1500px;
+            height: 500px;
+            position: absolute;
+            content: "";
+            justify-content: center;
+            z-index: -1;
+            opacity: 0.8;
+            background: url("./Multimedia/Img1.jpg")no-repeat;
+            
+        }
+
+        .nav a:hover{
+            color: gray;
+            text-decoration: underline;
+        }
+
+        .section{
+            grid-area: section;
+            display: grid;
+            margin-top: 10px;
+            /* display: flex; */
+            margin: auto;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        }
+
+        .section h3{
+            text-align: center;
+        }
+        
+        .items{
+            padding: 30px;
+            /* background-color: rgb(221, 182, 182); */
+            /* border: 3px ; */
+            box-shadow: 1px 1px 5px ;
+            margin: 10px;
+        }
+
+        /* .footer{
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: 90px 120px 150px 150px 330px;
+            height: 50px;
+            background-color: black;
+            position: sticky;
+            margin-top: 100px;
+        }
+
+        .footer a{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        } */
+
+        .footer{
+            margin-top: 70px;
+            grid-area: footer;
+             display: flex;
+            /*grid-template-columns: repeat(4,120px); */
+            height: 50px;
+            background-color: black;
+            position: sticky;
+        }
+        
+        .footer a{
+            /* padding-top: 40px;*/
+            padding-left: 30px;
+            /* padding-right: 10px; */
+            /* padding: 20px; */
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .footer a:hover{
+            color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact_us.html">Contact Us</a>
+        </nav>
+
+        <div class="head">
+                <h1>Welcome to Agarwal Hardware And Pipes</h1>
+        </div>
+
+        <div id="service"><h2>Our Services</h2></div>
+        <div class="section">
+            <div class="items">
+                <h3>Our Work</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo laudantium, inventore officia minus maiores aut eveniet cupiditate necessitatibus obcaecati pariatur sapiente, nulla quia. Facere fugit, vero quidem quod accusantium quibusdam ex distinctio ab enim est! Eum quibusdam perferendis sunt voluptates odio aliquam, fuga perspiciatis, obcaecati nostrum illum autem! Quasi autem nihil ipsa deleniti sed sit dicta dolorem et inventore dolorum quas iusto rem, soluta dolor vitae voluptatem qui dolores provident atque optio temporibus. Ipsum non ratione quos sequi. Soluta, officia. Perspiciatis accusamus eos eius sit illum! Quo iusto minima, non dicta unde ut libero voluptatibus magni sint a earum at officia assumenda porro odit ipsa placeat, dolores qui! Debitis totam pariatur eaque odio hic aperiam quaerat facilis natus alias fugiat, omnis molestias perferendis sint nemo dignissimos inventore aut porro possimus fugit. Cupiditate adipisci itaque veniam error dicta voluptate explicabo et nobis. Quae, eaque. Nulla similique labore vero facere expedita sunt.</div>
+            <div class="items">
+                <h3>Experience</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo laudantium, inventore officia minus maiores aut eveniet cupiditate necessitatibus obcaecati pariatur sapiente, nulla quia. Facere fugit, vero quidem quod accusantium quibusdam ex distinctio ab enim est! Eum quibusdam perferendis sunt voluptates odio aliquam, fuga perspiciatis, obcaecati nostrum illum autem! Quasi autem nihil ipsa deleniti sed sit dicta dolorem et inventore dolorum quas iusto rem, soluta dolor vitae voluptatem qui dolores provident atque optio temporibus. Ipsum non ratione quos sequi. Soluta, officia. Perspiciatis accusamus eos eius sit illum! Quo iusto minima, non dicta unde ut libero voluptatibus magni sint a earum at officia assumenda porro odit ipsa placeat, dolores qui! Debitis totam pariatur eaque odio hic aperiam quaerat facilis natus alias fugiat, omnis molestias perferendis sint nemo dignissimos inventore aut porro possimus fugit. Cupiditate adipisci itaque veniam error dicta voluptate explicabo et nobis. Quae, eaque. Nulla similique labore vero facere expedita sunt.</div>
+            <div class="items">
+                <h3>Reviews</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo laudantium, inventore officia minus maiores aut eveniet cupiditate necessitatibus obcaecati pariatur sapiente, nulla quia. Facere fugit, vero quidem quod accusantium quibusdam ex distinctio ab enim est! Eum quibusdam perferendis sunt voluptates odio aliquam, fuga perspiciatis, obcaecati nostrum illum autem! Quasi autem nihil ipsa deleniti sed sit dicta dolorem et inventore dolorum quas iusto rem, soluta dolor vitae voluptatem qui dolores provident atque optio temporibus. Ipsum non ratione quos sequi. Soluta, officia. Perspiciatis accusamus eos eius sit illum! Quo iusto minima, non dicta unde ut libero voluptatibus magni sint a earum at officia assumenda porro odit ipsa placeat, dolores qui! Debitis totam pariatur eaque odio hic aperiam quaerat facilis natus alias fugiat, omnis molestias perferendis sint nemo dignissimos inventore aut porro possimus fugit. Cupiditate adipisci itaque veniam error dicta voluptate explicabo et nobis. Quae, eaque. Nulla similique labore vero facere expedita sunt.</div>
+        </div>
+
+        <div class="footer">
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">&copy; 2021 | Agarwal Hardware And Pipes</a>
+        </div>
+    </div>
+</body>
+</html>

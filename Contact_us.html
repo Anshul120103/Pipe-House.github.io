@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agarwal Hardware And Pipes | Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            /* grid-template-rows:1fr 10fr 10fr 1fr;
+            grid-auto-rows:2fr; */
+            grid-template-areas:
+                'nav nav nav nav'
+                'head head head head'
+                'service service service service'
+                'section section section section'
+                'footer footer footer footer'
+        }
+
+        .nav {
+            grid-area: nav;
+            display: flex;
+            /*grid-template-columns: repeat(4,120px); */
+            height: 50px;
+            background-color: black;
+            position: sticky;
+        }
+
+        .nav a {
+            /* padding-top: 40px;*/
+            padding-left: 30px;
+            /* padding-right: 10px; */
+            /* padding: 20px; */
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        #service {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            grid-area: service;
+        }
+
+        .nav a:hover {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        .section {
+            grid-area: section;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 10px;
+            /* display: flex; */
+            margin: auto;
+        }
+
+        .section h3 {
+            text-align: center;
+        }
+
+        .section img {
+            margin: 10px;
+            margin-left: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .items {
+            padding: 30px;
+            /* background-color: rgb(221, 182, 182); */
+            /* border: 3px ; */
+            box-shadow: 1px 1px 5px;
+            margin: 10px;
+        }
+
+        .items a {
+            color: black;
+        }
+
+        .items a:hover {
+            color: red;
+        }
+
+        .footer {
+            margin-top: 70px;
+            grid-area: footer;
+            display: flex;
+            /*grid-template-columns: repeat(4,120px); */
+            height: 50px;
+            background-color: black;
+            position: sticky;
+        }
+
+        .footer a {
+            /* padding-top: 40px;*/
+            padding-left: 30px;
+            /* padding-right: 10px; */
+            /* padding: 20px; */
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .footer a:hover {
+            color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact_us.html">Contact Us</a>
+        </nav>
+
+        <div id="service">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="section">
+            <div class="items">
+                <h3>Ajay Agarwal</h3>
+                <p><b>Mobile: </b> 9374717147</p>
+                <p><b>Email: </b> agarwalpipes1975@gmail.com</p>
+
+            </div>
+            <div class="items">
+                <h3>Sanjana Agarwal</h3>
+                <p><b>Mobile: </b>9099846519</p>
+            </div>
+            <div class="items">
+                <h3>Address</h3>
+                <p>Plot No. 6201, Road No. 62,GIDC Sachin,Surat,Gujarat </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">&copy; 2021 | Agarwal Hardware And Pipes</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
