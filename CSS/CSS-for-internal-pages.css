@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        'nav nav nav nav'
+        'head head head head'
+        'service service service service'
+        'section section section section'
+        'footer footer footer footer'
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+}
+
+.nav a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+#service {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    grid-area: service;
+}
+
+.nav a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    margin: auto;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.section img {
+    margin: 10px;
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.items {
+    padding: 30px;
+    box-shadow: 1px 1px 5px;
+    margin: 10px;
+}
+
+.items a {
+    color: black;
+}
+
+.items a:hover {
+    color: red;
+}
+
+.footer {
+    margin-top: 70px;
+    grid-area: footer;
+    display: flex;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+}
+
+.footer a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.footer a:hover {
+    color: gray;
+    text-decoration: underline;
+}
